@@ -7,7 +7,9 @@
 - `Models/` - Mongoose schemas
 - `Middlewares/` - Auth, error handling, etc.
 - `Data/` - Sample MongoDB collections in json
+- `uploads/` -   Image uploads
 - `NodeJSTaskApi.postman_collection.json` - Postman collection file
+- 
 
 
 ## get clone from repo
@@ -18,7 +20,7 @@
 ## install dependency
 # npm install
 
-## copy sample .env.example file and create new .env file
+## Rename .env.example to .env and configure values.
 
 # run server
 # npm start
