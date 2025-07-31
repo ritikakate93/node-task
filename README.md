@@ -20,14 +20,14 @@
 
 ## copy sample .env.example file and create new .env file
 
-## run server
+# run server
 # npm start
 
 ## Import Postman Collection "NodeJSTaskApi.postman_collection.json"
 
 ## import data into MongoDB using mongoimort command
-# mongoimport --uri="your_connection_string" --collection=admin --file=Data/admin.json
-# mongoimport --uri="your_connection_string" --collection=seller --file=Data/seller.json
-# mongoimport --uri="your_connection_string" --collection=products --file=Data/products.json
+- mongoimport --uri="your_connection_string" --collection=admin --file=Data/admin.json
+- mongoimport --uri="your_connection_string" --collection=seller --file=Data/seller.json
+- mongoimport --uri="your_connection_string" --collection=products --file=Data/products.json
 
 
