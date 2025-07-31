@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "name": "ritika",
+  "email": "ritikakate@gmail.com",
+  "mobileNo": "987656534",
+  "country": "india",
+  "state": "Maharashtra",
+  "skills": [
+    "x",
+    "y",
+    "z"
+  ],
+  "password": "$2b$10$MmA3JLh7Yv6PIGQn.XE09Obe6RIG57cqNotIoj6YYr0vnKh69IWBK",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b25202ddd51819735584f"
+  },
+  "name": "ritz",
+  "email": "ritz@gmail.com",
+  "mobileNo": "987656534",
+  "country": "india",
+  "state": "Maharashtra",
+  "skills": [
+    "x",
+    "y"
+  ],
+  "password": "$2b$10$fSCG4wZwG5irV681QVIvr.03uTnIc8O5rU34LkdX.PxxOZM43V/Ga",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b4ccc98c244b02118cd9d"
+  },
+  "name": "ritvi",
+  "email": "ritvi@gmail.com",
+  "mobileNo": "987656534",
+  "country": "india",
+  "state": "Maharashtra",
+  "skills": [
+    "x",
+    "y"
+  ],
+  "password": "$2b$10$xsHtha45CRuhLtCK4oszIOSy3I4WogGQJ.Vj4T.VmoC2lkbFZvCqi",
+  "__v": 0
+}]

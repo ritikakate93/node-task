@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "65320aee-f447-48b2-a006-40052a061c11",
+		"name": "NodeJSTaskApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15612202"
+	},
+	"item": [
+		{
+			"name": "admin requests",
+			"item": [
+				{
+					"name": "add seller",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ritvi\",\r\n     \"email\":\"ritvi@gmail.com\", \r\n     \"mobileNo\":\"987656534\", \r\n     \"country\":\"india\", \r\n     \"state\":\"Maharashtra\", \r\n     \"skills\":[\"x\",\"y\"], \r\n     \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/admin/seller",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"email\":\"ritikakate@gmail.com\",\r\n\"password\":\"123456\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/admin/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seller List by  admin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGIyNDU5MTcxYWQxYjQ0OWY1N2Q0MyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1Mzk1MDI5MSwiZXhwIjoxNzU0MDM2NjkxfQ.NPTxystmOS0yL129tVfcnh07a3UQ91Tcj3_UnXOaFps",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/api/admin/sellerList",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"sellerList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "seller login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"ritikakate@gmail.com\",\r\n\"password\":\"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/seller/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"seller",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGIyM2NkNTJlZjQwOWRiMjI2OTZiMiIsInJvbGUiOiJzZWxsZXIiLCJpYXQiOjE3NTM5NjAzNDksImV4cCI6MTc1NDA0Njc0OX0.GBkpZzn5UbA_HUc_VuLFOskl17-YRwn0jpESf6to_ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productName",
+							"value": "mobile",
+							"type": "text"
+						},
+						{
+							"key": "productDescription",
+							"value": "testing mobile",
+							"type": "text"
+						},
+						{
+							"key": "brands[0][image]",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/mygov-999999999280537686-1024x733.jpg"
+						},
+						{
+							"key": "brands",
+							"value": "[{\"brandName\":\"redmi\",\"detail\":\"A1\",\"price\":10200},{\"brandName\":\"Samsung\",\"detail\":\"A2\",\"price\":15000}]",
+							"type": "text"
+						},
+						{
+							"key": "brands[1][image]",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/mygov-10000000001029051502.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/seller/addProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"seller",
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list Products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGIyM2NkNTJlZjQwOWRiMjI2OTZiMiIsInJvbGUiOiJzZWxsZXIiLCJpYXQiOjE3NTM5NjE3MDgsImV4cCI6MTc1NDA0ODEwOH0.TJGcOkG9IuzM1tkS0Ol5-zm0DYgQWb86qAzkVI9pPkg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/seller/listProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"seller",
+						"listProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product by id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGIyM2NkNTJlZjQwOWRiMjI2OTZiMiIsInJvbGUiOiJzZWxsZXIiLCJpYXQiOjE3NTM5NjAzNDksImV4cCI6MTc1NDA0Njc0OX0.GBkpZzn5UbA_HUc_VuLFOskl17-YRwn0jpESf6to_ws",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/seller/product/688b407a0afe974d4cfbe56d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"seller",
+						"product",
+						"688b407a0afe974d4cfbe56d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

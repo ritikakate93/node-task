@@ -1,0 +1,213 @@
+[{
+  "_id": {
+    "$oid": "688b3a9342775c6093736fa2"
+  },
+  "productName": "Laptop",
+  "productDescription": "testing lappy",
+  "brands": [
+    {
+      "brandName": "Dell",
+      "detail": "A1",
+      "image": "/uploads/mygov-999999999280537686-1024x733.jpg",
+      "price": 1200,
+      "_id": {
+        "$oid": "688b3a9342775c6093736fa3"
+      }
+    },
+    {
+      "brandName": "Dell-AB",
+      "detail": "A2",
+      "image": "/uploads/mygov-10000000001029051502.jpg",
+      "price": 1500,
+      "_id": {
+        "$oid": "688b3a9342775c6093736fa4"
+      }
+    }
+  ],
+  "sellerId": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b3aaa42775c6093736fa6"
+  },
+  "productName": "Laptop",
+  "productDescription": "testing lappy",
+  "brands": [
+    {
+      "brandName": "Dell",
+      "detail": "A1",
+      "image": "/uploads/mygov-999999999280537686-1024x733.jpg",
+      "price": 1200,
+      "_id": {
+        "$oid": "688b3aaa42775c6093736fa7"
+      }
+    },
+    {
+      "brandName": "HP",
+      "detail": "A2",
+      "image": "/uploads/mygov-10000000001029051502.jpg",
+      "price": 1500,
+      "_id": {
+        "$oid": "688b3aaa42775c6093736fa8"
+      }
+    }
+  ],
+  "sellerId": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b3be1249352fd5f427ce8"
+  },
+  "productName": "Laptop",
+  "productDescription": "testing lappy",
+  "brands": [
+    {
+      "brandName": "Dell",
+      "detail": "A1",
+      "image": "/uploads/mygov-999999999280537686-1024x733.jpg",
+      "price": 1200,
+      "_id": {
+        "$oid": "688b3be1249352fd5f427ce9"
+      }
+    },
+    {
+      "brandName": "HP",
+      "detail": "A2",
+      "image": "/uploads/mygov-10000000001029051502.jpg",
+      "price": 1500,
+      "_id": {
+        "$oid": "688b3be1249352fd5f427cea"
+      }
+    }
+  ],
+  "sellerId": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b4043278f28d39a9fad60"
+  },
+  "productName": "Laptop",
+  "brands": [
+    {
+      "brandName": "Dell",
+      "detail": "A1",
+      "image": "/uploads/mygov-999999999280537686-1024x733.jpg",
+      "price": 1200,
+      "_id": {
+        "$oid": "688b4043278f28d39a9fad61"
+      }
+    },
+    {
+      "brandName": "HP",
+      "detail": "A2",
+      "image": "/uploads/mygov-10000000001029051502.jpg",
+      "price": 1500,
+      "_id": {
+        "$oid": "688b4043278f28d39a9fad62"
+      }
+    }
+  ],
+  "sellerId": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b4070c701fd874c35ea54"
+  },
+  "productName": "Laptop",
+  "brands": [
+    {
+      "brandName": "Dell",
+      "detail": "A1",
+      "image": "/uploads/mygov-999999999280537686-1024x733.jpg",
+      "price": 1200,
+      "_id": {
+        "$oid": "688b4070c701fd874c35ea55"
+      }
+    },
+    {
+      "brandName": "HP",
+      "detail": "A2",
+      "image": "/uploads/mygov-10000000001029051502.jpg",
+      "price": 1500,
+      "_id": {
+        "$oid": "688b4070c701fd874c35ea56"
+      }
+    }
+  ],
+  "sellerId": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b43f1d4c7a92903476a4a"
+  },
+  "productName": "Laptop",
+  "productDescription": "testing lappy",
+  "brands": [
+    {
+      "brandName": "Dell",
+      "detail": "A1",
+      "price": 1200,
+      "_id": {
+        "$oid": "688b43f1d4c7a92903476a4b"
+      }
+    },
+    {
+      "brandName": "HP",
+      "detail": "A2",
+      "price": 1500,
+      "_id": {
+        "$oid": "688b43f1d4c7a92903476a4c"
+      }
+    }
+  ],
+  "sellerId": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688b4fe057ecee2e63ce7571"
+  },
+  "productName": "mobile",
+  "productDescription": "testing mobile",
+  "brands": [
+    {
+      "brandName": "redmi",
+      "detail": "A1",
+      "image": "/uploads/mygov-999999999280537686-1024x733.jpg",
+      "price": 10200,
+      "_id": {
+        "$oid": "688b4fe057ecee2e63ce7572"
+      }
+    },
+    {
+      "brandName": "Samsung",
+      "detail": "A2",
+      "image": "/uploads/mygov-10000000001029051502.jpg",
+      "price": 15000,
+      "_id": {
+        "$oid": "688b4fe057ecee2e63ce7573"
+      }
+    }
+  ],
+  "sellerId": {
+    "$oid": "688b23cd52ef409db22696b2"
+  },
+  "__v": 0
+}]
