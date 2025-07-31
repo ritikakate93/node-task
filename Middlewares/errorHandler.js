@@ -1,6 +1,17 @@
 module.exports = (err, req, res, next) => {
-  res.status(err.statusCode || 500).json({
+  const statusCode = err.statusCode || 500;
+
+   let message = err.message || "Internal server error";
+
+  if (statusCode === 400 && !err.message) {
+    message = "Bad Request";
+  }
+
+  res.status(statusCode).json({
     success: false,
-    message: err.message || "Server Error",
+    statusCode,
+    message: err.message || "Internal server error"
   });
+
+  
 };

@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require("path");
 
-dbConnect = require('./dbFile');
+dbConnect = require('./Utils/dbFile');
 dbConnect();
 
 const adminRoutes = require("./Routes/adminRoute");
