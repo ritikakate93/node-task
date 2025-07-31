@@ -12,7 +12,7 @@
 
 ## get clone from repo
 
-# git clone <your-repo-url>
+# git clone url <your-repo-url>
 # cd project-name
 
 ## install dependency
