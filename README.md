@@ -9,7 +9,7 @@
 - `Data/` - Sample MongoDB collections in json
 - `uploads/` -   Image uploads
 - `NodeJSTaskApi.postman_collection.json` - Postman collection file
-- 
+  
 
 
 ## get clone from repo
