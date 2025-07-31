@@ -1,7 +1,7 @@
-const Admin = require("../models/Admin");
-const Seller = require("../models/Seller");
-const bycrypt = require('bcryptjs');
-const generateToken = require("../utils/generateToken");
+const Admin = require("../Models/adminModel");
+const Seller = require("../Models/sellerModel");
+const bcrypt = require('bcryptjs');
+const generateToken = require("../Utils/generateToken");
 
 
 exports.createSeller = async (req, res, next) => {
@@ -31,3 +31,16 @@ exports.loginAdmin = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.listSellers = async(req,res,next)=>{
+      try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const sellers = await Seller.find()
+      .skip((page - 1) * limit)
+      .limit(limit);
+    res.json({ sellers });
+  } catch (err) {
+    next(err);
+  }
+}
