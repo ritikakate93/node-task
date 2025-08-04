@@ -87,6 +87,7 @@ exports.addProduct = async(req, res, next)=>{
 
 exports.listProducts = async (req, res, next) => {
   try {
+    // console.log(req.query)
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
 

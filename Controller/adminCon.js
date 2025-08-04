@@ -9,6 +9,43 @@ const isValidEmail = (email) => {
 };
 
 
+exports.loginAdmin = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      const err = new Error("Email and password are required");
+      err.statusCode = 400;
+      return next(err);
+    }
+
+    const admin = await Admin.findOne({ email });
+    if (!admin) {
+      const err = new Error("Invalid credentials");
+      err.statusCode = 401;
+      return next(err);
+    }
+
+    const isMatch = await bcrypt.compare(password, admin.password);
+    if (!isMatch) {
+      const err = new Error("Invalid credentials");
+      err.statusCode = 401;
+      return next(err);
+    }
+   
+    const token = generateToken(admin, "admin");
+
+    res.status(200).json({
+      token,
+      role: "admin",
+      message: "Login successful"
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
+
 exports.createSeller = async (req, res, next) => {
   try {
     const { name, email, mobileNo, country, state, skills, password } = req.body;
@@ -58,44 +95,9 @@ exports.createSeller = async (req, res, next) => {
 };
 
 
-exports.loginAdmin = async (req, res, next) => {
-  try {
-    const { email, password } = req.body;
-
-    if (!email || !password) {
-      const err = new Error("Email and password are required");
-      err.statusCode = 400;
-      return next(err);
-    }
-
-    const admin = await Admin.findOne({ email });
-    if (!admin) {
-      const err = new Error("Invalid credentials");
-      err.statusCode = 401;
-      return next(err);
-    }
-
-    const isMatch = await bcrypt.compare(password, admin.password);
-    if (!isMatch) {
-      const err = new Error("Invalid credentials");
-      err.statusCode = 401;
-      return next(err);
-    }
-   
-    const token = generateToken(admin, "admin");
-
-    res.status(200).json({
-      token,
-      role: "admin",
-      message: "Login successful"
-    });
-  } catch (err) {
-    next(err);
-  }
-};
-
 exports.listSellers = async(req,res,next)=>{
   try {
+    // console.log(req.query)
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
     
